@@ -8,4 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <!--&lt;!&ndash;标题栏&ndash;&gt;-->
+    <!--<style name="WidgetToolbar" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.ZhiHu</item>-->
+    <!--</style>-->
+
+    <!--<style name="ActionButton.Overflow.ZhiHu" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">-->
+        <!--<item name="android:src">@drawable/ic_more_vert_white_24px</item>-->
+    <!--</style>-->
+
 </resources>
