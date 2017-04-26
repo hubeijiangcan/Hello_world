@@ -7,7 +7,7 @@ import android.util.DisplayMetrics;
 /**
  * Created by jc on 2017/4/21.
  */
-public class MApplication extends Application {
+public class  MApplication extends Application {
 
     private static MApplication mInstance;
 
