@@ -6,14 +6,11 @@ import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.nfc.Tag;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.DrawableRes;
-import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -31,12 +28,11 @@ import android.widget.TextView;
 
 import com.mitbbs.summary.MApplication;
 import com.mitbbs.summary.R;
-import com.mitbbs.summary.util.TestUtils;
+import com.mitbbs.summary.util.Utils;
 import com.mitbbs.summary.view.SwipeBackLayout;
 
 import java.io.Serializable;
 import java.util.HashMap;
-import java.util.Objects;
 
 
 /**
@@ -63,6 +59,8 @@ public abstract class BaseActivity extends AppCompatActivity implements Toolbar.
         TAG = getClass().getSimpleName();
         context = this;
         addActivity(getClass().getSimpleName(),this);
+
+
 
         setContentView(attachLayout());
         bindViews();
@@ -154,7 +152,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Toolbar.
     protected void onStart() {
         super.onStart();
         //测试使用
-        if (TestUtils.isDebugTest(this)){
+        if (Utils.isDebugTest(this)){
             a();
         }
     }
@@ -210,7 +208,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Toolbar.
      * 右滑返回
      */
     @Override
-    public void setContentView(@LayoutRes int layoutResID) {
+    public void setContentView(int layoutResID) {
         View view;
         if (!canSwipeBack()){
             super.setContentView(layoutResID);

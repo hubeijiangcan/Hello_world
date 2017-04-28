@@ -6,7 +6,13 @@ package com.mitbbs.summary;
  */
 public class StaticString {
 
+    //线上
+    public static String BASE_DOMAIN = "www.rencai8.com";
 
-    public static final String BASE_URL = "";
+    //阿里云
+//    public static String BASE_DOMAIN = "123.57.5.76:8080";
+
+    public static String BASE_URL ="http://"+BASE_DOMAIN+"/App_service/service_menu.php";
+
 
 }

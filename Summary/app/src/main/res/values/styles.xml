@@ -14,8 +14,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
-
+    !--右滑返回页面主题-->
+    <style name="AppThemeSwipeBack" parent="Theme.Swipe.Back">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="homepage">@color/homepage</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Theme.Swipe.Back" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
     <!--&lt;!&ndash;标题栏&ndash;&gt;-->
     <!--<style name="WidgetToolbar" parent="Theme.AppCompat.Light.NoActionBar">-->
         <!--<item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.ZhiHu</item>-->
