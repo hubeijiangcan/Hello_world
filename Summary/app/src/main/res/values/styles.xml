@@ -35,5 +35,8 @@
     <!--<style name="ActionButton.Overflow.ZhiHu" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">-->
         <!--<item name="android:src">@drawable/ic_more_vert_white_24px</item>-->
     <!--</style>-->
-
+    <style name="NOBackGroundDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
 </resources>

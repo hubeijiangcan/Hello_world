@@ -10,4 +10,13 @@
     <dimen name="text_size_ss">12sp</dimen>
     <dimen name="text_size_xl">24sp</dimen>
     <dimen name="text_size_toolbar">17sp</dimen>
+
+    <dimen name="tips_view_width">160dp</dimen>
+    <dimen name="tips_view_height">160dp</dimen>
+
+    <dimen name="margin_xl">20dp</dimen>
+    <dimen name="margin_l">16dp</dimen>
+    <dimen name="margin_m">12dp</dimen>
+    <dimen name="margin_s">8dp</dimen>
+    <dimen name="margin_ss">4dp</dimen>
 </resources>

@@ -40,7 +40,7 @@ import java.util.HashMap;
  */
 public abstract class BaseActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener
     ,SwipeBackLayout.SwipeBackListener{
-    public String TAG = "BaseActivity";
+    protected String TAG = "BaseActivity";
     public Context context;
     protected boolean pause;
     protected boolean lock;

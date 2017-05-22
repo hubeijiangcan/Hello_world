@@ -2,7 +2,7 @@ package com.mitbbs.summary;
 
 /**
  * Created by jc on 2017/4/26.
- * 存放一些常用的静态字符串
+ * 存放一些常用的静态变量
  */
 public class StaticString {
 
@@ -15,4 +15,18 @@ public class StaticString {
     public static String BASE_URL ="http://"+BASE_DOMAIN+"/App_service/service_menu.php";
 
 
+    //是否有新版本
+    public static boolean hasNewVersion = false;
+
+
+
+
+
+
+
+    /**
+     * requestType  接口类型
+     */
+    //检查版本
+    public static final String CHECK_VERSION = "";
 }
