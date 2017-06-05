@@ -1,61 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="#f0f0f0">
-    <include layout="@layout/widget_toolbar"/>
-
-    <LinearLayout
-        android:id="@+id/ll_jobRoot"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-        <android.support.v4.widget.SwipeRefreshLayout
-            android:id="@+id/swipe_jobinfo"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            >
-            <ListView
-                android:id="@+id/lv_otherJob"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:divider="@null"
-                />
-        </android.support.v4.widget.SwipeRefreshLayout>
-        <LinearLayout
-            android:id="@+id/ll_jobInfobottom"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            >
-            <Button
-                android:id="@+id/bt_applay"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:text="申请该职位"
-                android:background="@android:color/transparent"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                />
-            <View
-                android:layout_width="0.5dp"
-                android:layout_height="match_parent"
-                android:background="@color/white"/>
-            <Button
-                android:id="@+id/bt_writeEmail"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:text="联系该企业"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                />
-        </LinearLayout>
-    </LinearLayout>
-
-</LinearLayout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_splash"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash">
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本号:1.0"
+        android:textSize="@dimen/margin_l"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.ProgressBar.Large"
+        android:layout_below="@+id/tv_version"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

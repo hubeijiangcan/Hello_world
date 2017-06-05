@@ -57,13 +57,16 @@ public class TipsFactory {
         if (tipsFactory !=null){
             if (Build.VERSION.SDK_INT < 14){
                 tipsToast.cancel();
+            }else {
+                tipsToast = TipsToast.makeText(context, msg, TipsToast.LENGTH_SHORT);
+                tipsToast.show();
+                if (iconResId != -1){
+                    tipsToast.setIcon(iconResId);
+                }
+                tipsToast.setText(msg);
             }
-        }else {
-            tipsToast = TipsToast.makeText(context, msg, TipsToast.LENGTH_SHORT);
-        }
-        tipsToast.show();
-        tipsToast.setIcon(iconResId);
-        tipsToast.setText(msg);
+            }
+
     }
 
 

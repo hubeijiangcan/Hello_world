@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="set_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_s</item>
+        <item name="android:layout_marginLeft">@dimen/margin_s</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableLeft">@android:drawable/star_big_on</item>
+        <item name="android:textSize">@dimen/text_size_m</item>
+        <item name="android:textColor">@color/need_333</item>
+    </style>
+    <style name="next_">
+        <item name="android:onClick">next</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">下一步</item>
+        <item name="android:drawableRight">@drawable/next</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="pre">
+        <item name="android:onClick">pre</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">上一步</item>
+        <item name="android:drawableLeft">@drawable/previous</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+</resources>

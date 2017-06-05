@@ -4,12 +4,21 @@
     <!--<color name="colorPrimaryDark">#303F9F</color>-->
     <!--<color name="colorAccent">#FF4081</color>-->
 
-    <color name="white">#ffffff</color>
+
 
     <color name="colorPrimary">#4b9843</color>
     <color name="colorPrimaryDark">#4b9843</color>
     <color name="colorAccent">#4b9843</color>
     <color name="homepage">#4b9843</color>
 
+    <color name="background">#f0f0f0</color>
+    <color name="head">#8866ff00</color>
+
     <color name="need_999">#999999</color>
+    <color name="need_666">#666666</color>
+    <color name="need_333">#333333</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
 </resources>

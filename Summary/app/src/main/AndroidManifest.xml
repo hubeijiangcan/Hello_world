@@ -11,15 +11,67 @@
         android:supportsRtl="true"
         android:theme="@style/AppBaseTheme"
         >
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.MainActivity"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.TestActivity"
-            android:theme="@style/AppThemeSwipeBack"></activity>
+
+        <activity android:name=".activity.ProtectSplashActivity"
+                  android:screenOrientation="portrait"
+            android:theme="@style/AppThemeSwipeBack">
+        </activity>
+
+        <activity android:name=".activity.HomeActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppThemeSwipeBack">
+        </activity>
+
+        <activity android:name=".activity.SettingActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppThemeSwipeBack">
+        </activity>
+        <activity android:name=".activity.SetUp01Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppThemeSwipeBack">
+        </activity>
+        <activity android:name=".activity.SetUp02Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppThemeSwipeBack">
+        </activity>
+        <activity android:name=".activity.SetUp03Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppThemeSwipeBack">
+        </activity>
+        <activity android:name=".activity.SetUp04Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppThemeSwipeBack">
+        </activity>
+        <activity android:name=".activity.LostFindActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppThemeSwipeBack">
+        </activity>
+        <activity android:name=".activity.SelectContactActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppThemeSwipeBack">
+        </activity>
+
+
+
+        <receiver android:name=".reciver.BootBrodCaseReciver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <!--<category android:name="android.intent.category.HOME"/>-->
+            </intent-filter>
+        </receiver>
     </application>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
 </manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:paddingLeft="@dimen/margin_m"
+    android:paddingTop="@dimen/margin_m"
+    android:paddingRight="@dimen/margin_m">
+    <TextView
+        android:id="@+id/tv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_l"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/tv_isUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_update"
+        android:layout_marginTop="@dimen/margin_ss"
+        />
+    <CheckBox
+        android:id="@+id/cb_isUpdate"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/need_666"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
