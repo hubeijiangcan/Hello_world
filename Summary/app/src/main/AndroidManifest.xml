@@ -61,10 +61,17 @@
 
 
 
-        <receiver android:name=".reciver.BootBrodCaseReciver">
+        <receiver android:name=".reciver.BootBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <!--<category android:name="android.intent.category.HOME"/>-->
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".reciver.SmsBroadcastReceiver">
+            <intent-filter>
+                <!--接收短信的action -->
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
             </intent-filter>
         </receiver>
     </application>
@@ -74,4 +81,5 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <uses-permission android:name="android.permission.CAMERA"></uses-permission>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
 </manifest>

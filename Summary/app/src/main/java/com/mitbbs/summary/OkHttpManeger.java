@@ -134,6 +134,9 @@ public class OkHttpManeger {
     /**
      * Json提交
      * @param params
+     *
+     *
+     *
      * @param callBack
      */
     public void post(JSONObject jsonObject,final ResponseHandler callBack){
@@ -148,7 +151,6 @@ public class OkHttpManeger {
                 fail(callBack,e);
             }
 
-            @Override
             public void onResponse(Call call, Response response) throws IOException {
                 if (response != null && response.isSuccessful()){
                     try {

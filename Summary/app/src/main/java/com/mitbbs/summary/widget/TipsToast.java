@@ -49,7 +49,8 @@ public class TipsToast extends Toast{
     }
 
 
-    public static TipsToast makeText(Context context, int resId, int duration) throws Resources.NotFoundException {
+    public static TipsToast makeText(Context
+                                             context, int resId, int duration) throws Resources.NotFoundException {
         return makeText(context, context.getResources().getText(resId), duration);
     }
 
