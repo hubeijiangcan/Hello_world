@@ -3,7 +3,7 @@ package com.mitbbs.summary.handler;
 /**
  * Created by jc on 2017/7/31.
  */
-public class Looper {
+public final class Looper {
 
     /**
      * 每个主线程都有一个Looper对象
@@ -41,8 +41,20 @@ public class Looper {
     /**
      *  轮询消息队列
      */
-    public void loop(){
-
+    public static void loop(){
+        Looper me = myLooper();
+        if (me == null){
+            throw new RuntimeException("No Looper；Looper.prepare() wasn't called on this Thread");
+        }
+        MessageQueue queue = me.mQueue;
+        for (;;){
+            Message msg = queue.next();
+            if (msg == null){
+                continue;
+            }
+            //转发给handler
+            msg.target.dispatchMessage(msg);
+        }
     }
 
 }

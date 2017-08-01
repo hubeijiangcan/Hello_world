@@ -21,6 +21,15 @@ public class Handler {
      * @param msg
      */
     public void sendMessage(Message msg){
+        msg.target = this;
         mQueue.enqueueMessage(msg);
+    }
+
+    public void dispatchMessage(Message msg){
+        hanldeMessage(msg);
+    }
+
+    private void hanldeMessage(Message msg) {
+
     }
 }
