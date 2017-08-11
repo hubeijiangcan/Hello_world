@@ -47,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startActivity(new Intent(MainActivity.this,HomeActivity.class));
+//                startActivity(new Intent(MainActivity.this,HomeActivity.class));
+                    //测试自定义view用界面
+                startActivity(new Intent(MainActivity.this,TestViewActivity.class));
             }
         });
 

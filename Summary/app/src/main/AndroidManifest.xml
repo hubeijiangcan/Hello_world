@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppBaseTheme"
         >
-        <activity android:name=".activity.MainActivity"
+        <!--MainActivity-->
+        <activity android:name=".activity.HomeActivity"
                   android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -24,11 +25,15 @@
                   android:screenOrientation="portrait"
             android:theme="@style/AppThemeSwipeBack">
         </activity>
-
-        <activity android:name=".activity.HomeActivity"
+        <activity android:name=".activity.ColorChangeTestActivity"
                   android:screenOrientation="portrait"
                   android:theme="@style/AppThemeSwipeBack">
         </activity>
+
+        <!--<activity android:name=".activity.HomeActivity"-->
+                  <!--android:screenOrientation="portrait"-->
+                  <!--android:theme="@style/AppThemeSwipeBack">-->
+        <!--</activity>-->
 
         <activity android:name=".activity.SettingActivity"
                   android:screenOrientation="portrait"
@@ -55,6 +60,11 @@
                   android:theme="@style/AppThemeSwipeBack">
         </activity>
         <activity android:name=".activity.SelectContactActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppThemeSwipeBack">
+        </activity>
+
+        <activity android:name=".activity.TestViewActivity"
                   android:screenOrientation="portrait"
                   android:theme="@style/AppThemeSwipeBack">
         </activity>

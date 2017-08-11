@@ -6,4 +6,26 @@
         <attr name="update_off" format="string"/>
         <attr name="setting_title" format="string"/>
     </declare-styleable>
+
+    <declare-styleable name="QQStepView">
+        <attr name="outerColor" format="color"/>
+        <attr name="innerColor" format="color"/>
+        <attr name="setpTextSize" format="dimension"/>
+        <attr name="boardWidth" format="dimension"/>
+        <attr name="stepTextColor" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ColorTrackTextView">
+        <attr name="changeColor" format="color"/>
+        <attr name="originColor" format="color"/>
+    </declare-styleable>
+    
+    
+    <declare-styleable name="CircleProgressBar">
+        <attr name="circleBoardWidth" format="dimension"/>
+        <attr name="outerColor" format="color"/>
+        <attr name="innerColor" format="color"/>
+        <attr name="circleTextColor" format="color"/>
+        <attr name="circleTextSize"/>
+    </declare-styleable>
 </resources>

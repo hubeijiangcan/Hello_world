@@ -1,5 +1,6 @@
 package com.mitbbs.summary.activity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
@@ -84,8 +85,12 @@ public class HomeActivity extends BaseActivity {
         private void enterActivity(int position) {
             switch (position){
                 case 8:
-                    log("posiotion");
-                    startActivity(SettingActivity.class);
+
+//                    startActivity(ColorChangeTestActivity.class);
+                    //测试自定义view用界面
+                    startActivity(TestViewActivity.class);
+//                    log("posiotion");
+//                    startActivity(SettingActivity.class);
                     break;
                 case 0:
                     String password = sp.getString("password","");

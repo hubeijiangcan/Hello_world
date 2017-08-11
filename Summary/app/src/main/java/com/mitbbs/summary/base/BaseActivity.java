@@ -50,6 +50,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Toolbar.
 
     protected Toolbar toolbar;
     //右滑返回
+
     private SwipeBackLayout swipeBackLayout;
     private ImageView ivShadow;
 
