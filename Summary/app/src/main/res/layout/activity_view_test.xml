@@ -8,13 +8,23 @@
     >
     <include layout="@layout/widget_toolbar"></include>
 
-    <com.mitbbs.summary.view.QQStepView
-        android:id="@+id/qq_setp"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        app:setpTextSize="20sp"
+    <!--<com.mitbbs.summary.view.QQStepView-->
+        <!--android:id="@+id/qq_setp"-->
+        <!--android:layout_width="160dp"-->
+        <!--android:layout_height="160dp"-->
+        <!--app:setpTextSize="20sp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--/>-->
+
+    <com.mitbbs.summary.view.CircleProgressBar
+        android:id="@+id/circle_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
+        android:visibility="gone"
         />
-
-
+    <RatingBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 </RelativeLayout>

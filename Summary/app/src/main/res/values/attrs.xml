@@ -23,9 +23,9 @@
     
     <declare-styleable name="CircleProgressBar">
         <attr name="circleBoardWidth" format="dimension"/>
-        <attr name="outerColor" format="color"/>
-        <attr name="innerColor" format="color"/>
+        <attr name="nomarlColor" format="color"/>
+        <attr name="progressColor" format="color"/>
         <attr name="circleTextColor" format="color"/>
-        <attr name="circleTextSize"/>
+        <attr name="circleTextSize" format="dimension"/>
     </declare-styleable>
 </resources>
